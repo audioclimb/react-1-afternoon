@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-class Sum extends Component {
+export default class Sum extends Component {
     render() {
         return(
             <p>Sum Component</p>
