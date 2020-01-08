@@ -19,8 +19,14 @@ export default class EvenAndOdd extends Component {
         let odds = [];
 
         for ( let i = 0; i < arr.lenght; i++ ) {
-            if ( arr[i] % 2 ===)
+            if ( arr[i] % 2 === 0 ) {
+                evens.push( parseInt(arr[i], 10));
+            } else {
+                odds.push( parseInt(arr[i], 10));
+            }
         }
+
+        this.setState({ evenArray: evens, oddArray: odds});
     }
 
     render() {
